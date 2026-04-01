@@ -222,7 +222,7 @@ const About = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Sample Analysis</p>
-                      <p className="text-xl font-bold">Resume_John_Doe.pdf</p>
+                      <p className="text-xl font-bold">Resume_Pari Gupta_Doe.pdf</p>
                     </div>
                   </div>
 

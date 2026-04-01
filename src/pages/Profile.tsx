@@ -25,10 +25,10 @@ import { Badge } from "@/components/ui/badge";
 const Profile = () => {
   const [editing, setEditing] = useState(false);
   const [profile, setProfile] = useState({
-    name: "John Doe",
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, CA",
+    name: "Pari Gupta",
+    email: "parig.@example.com",
+    phone: "+91 123456789",
+    location: "Tokyo, Japan",
     title: "Senior Frontend Developer",
   });
 

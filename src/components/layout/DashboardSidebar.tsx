@@ -25,7 +25,7 @@ const DashboardSidebar = () => {
     { name: "Upload Resume", path: "/upload", icon: Upload },
     { name: "Analysis Results", path: "/results", icon: BarChart3 },
     { name: "Job Description", path: "/job-description", icon: Briefcase },
-    { name: "My Resumes", path: "/resumes", icon: FileText },
+    // { name: "My Resumes", path: "/resumes", icon: FileText },
     { name: "Profile", path: "/profile", icon: User },
   ];
 

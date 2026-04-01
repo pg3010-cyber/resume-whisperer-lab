@@ -53,25 +53,25 @@ const Dashboard = () => {
 
   const recentAnalyses = [
     {
-      name: "John Smith",
+      name: "Aditya Sharma",
       position: "Senior Developer",
       score: 92,
       date: "2 hours ago",
     },
     {
-      name: "Sarah Johnson",
+      name: "Pari Gupta",
       position: "Product Manager",
       score: 85,
       date: "4 hours ago",
     },
     {
-      name: "Michael Chen",
+      name: "Aayush Namdeo",
       position: "UX Designer",
       score: 78,
       date: "Yesterday",
     },
     {
-      name: "Emily Davis",
+      name: "Sarika",
       position: "Data Analyst",
       score: 88,
       date: "Yesterday",
