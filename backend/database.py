@@ -1,20 +1,16 @@
-from motor.motor_asyncio import AsyncIOMotorClient
-from config import MONGO_URI
+import firebase_admin
+from firebase_admin import credentials, firestore
+from config import FIREBASE_CREDENTIALS
 
-client: AsyncIOMotorClient = None
 db = None
 
-async def connect_db():
-    global client, db
-    client = AsyncIOMotorClient(MONGO_URI)
-    db = client["resume_whisperer"]
-    print("✅ Connected to MongoDB")
-
-async def close_db():
-    global client
-    if client:
-        client.close()
-        print("🔴 MongoDB connection closed")
+def connect_db():
+    global db
+    if not firebase_admin._apps:
+        cred = credentials.Certificate(FIREBASE_CREDENTIALS)
+        firebase_admin.initialize_app(cred)
+    db = firestore.client()
+    print("✅ Connected to Firebase Firestore")
 
 def get_db():
     return db
